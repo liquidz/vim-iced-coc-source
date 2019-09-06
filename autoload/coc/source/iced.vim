@@ -11,10 +11,6 @@ function! coc#source#iced#complete(opt, cb) abort
     return
   endif
 
-  " if iced#nrepl#current_session_key() ==# 'cljs'
-  "   return
-  " endif
-
   if !iced#nrepl#check_session_validity(v:false)
     return
   endif

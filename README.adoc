@@ -7,7 +7,6 @@
 {empty}
 
 image:https://img.shields.io/badge/vim--iced-plugin-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgICAgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiCiAgICAgdmlld0JveD0iMTAsMTAsODAsODAiPgogIDxwb2x5Z29uIGZpbGw9IiNCM0U1RkMiIHBvaW50cz0iNTAsMTAgMTAsNTAgMzAsNzAgMjAsNTAiLz4KICA8cG9seWdvbiBmaWxsPSIjOTBDQUY5IiBwb2ludHM9IjUwLDEwIDMwLDUwIDMwLDcwIDU1LDUwIi8+CiAgPHBvbHlnb24gZmlsbD0iIzgxRDRGQSIgcG9pbnRzPSI1MCwxMCA3MCw3MCA5MCw1MCIvPgogIDxwb2x5Z29uIGZpbGw9IiM2NEI1RjYiIHBvaW50cz0iNjAsNjAgMzAsNzAgNTAsOTAgNzAsNzAiLz4KPC9zdmc+Cg==["vim-iced plugin", link="https://github.com/liquidz/vim-iced"]
-image:https://img.shields.io/badge/patreon-donate-yellow.svg?logo=Patreon["Become a Patron", link="https://www.patreon.com/uochan"]
 
 WARNING: This project is under development.
 
@@ -17,12 +16,25 @@ WARNING: This project is under development.
 
 == Installation
 
+=== coc.nvim
+
+* See https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim[coc.nvim's document].
+
 === vim-plug
 
 [source,vim]
 ----
 Plug 'liquidz/vim-iced', {'for': 'clojure'}
 Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
+----
+
+=== coc-settings.json
+
+[source,json]
+----
+{
+    "coc.source.iced.enable": true
+}
 ----
 
 == License
