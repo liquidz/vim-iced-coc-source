@@ -7,7 +7,7 @@ function! coc#source#iced#init() abort
 endfunction
 
 function! coc#source#iced#complete(opt, cb) abort
-  if !iced#nrepl#is_connected()
+  if !iced#repl#is_connected()
     return
   endif
 
