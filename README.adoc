@@ -28,6 +28,12 @@ Plug 'liquidz/vim-iced', {'for': 'clojure'}
 Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
 ----
 
+[NOTE]
+====
+vim-iced-coc-source must be loaded after loading vim-iced. +
+When you see "vim-iced vx.y.z or later is required", please confirm the loading order for plugins.
+====
+
 === coc-settings.json
 
 [source,json]
@@ -39,6 +45,6 @@ Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
 
 == License
 
-Copyright (c) 2019 http://twitter.com/uochan[Masashi Iizuka].
+Copyright (c) 2019-2021 http://twitter.com/uochan[Masashi Iizuka].
 
 Distributed under the MIT License.
